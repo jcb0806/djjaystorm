@@ -3,55 +3,98 @@ html {
 }
 
 body {
-    position: relative;
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
 body .background {
-    background: radial-gradient(transparent 50%, black), url('../img/bg.jpg') no-repeat center center fixed;
-    position: absolute;
+    background: radial-gradient(transparent 50%, black), url('../img/dj1.jpg') no-repeat center center fixed;
     margin: 0;
     padding: 0;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: -1;
     box-shadow: inset 0 0 500px black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
 }
 
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
 
-.card {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
 
-    /*
-        Nope =(
-        margin-left: -25%;
-        margin-top: -25%;
-        */
+.navbar-brand img {
+    max-width: 165px;
+}
 
-    /* 
-        Yep!
-        */
-    transform: translate(-50%, -50%);
+.sr-only {
+    display: none;
+}
 
-    /*
-        Not even necessary really. 
-        e.g. Height could be left out!
-        */
-    width: 40%;
-    height: 50%;
-    max-width: 600px;
-    padding:15px
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#about {
+    background-color: #fff;
+    color: black;
+    padding: 3.5em;
+}
+
+.h1, h1 {
+	font-size: calc(2.375rem + 1.5vw);
+	font-weight: 700;
+}
+
+.h2, h2 {
+	font-size: calc(1.325rem + .9vw);
+	font-weight: 700;
+}
+
+#socials {
+    background: radial-gradient(transparent 50%, black), url('../img/bg.jpg') no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: inset 0 0 500px black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
