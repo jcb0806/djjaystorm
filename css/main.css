@@ -9,7 +9,7 @@ body {
 }
 
 body .background {
-    background: radial-gradient(transparent 50%, black), url('../img/dj1.jpg') no-repeat center center fixed;
+    background: radial-gradient(transparent 50%, black), url('../img/dj1.jpg') no-repeat top center fixed;
     margin: 0;
     padding: 0;
     left: 0;
@@ -22,6 +22,8 @@ body .background {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .bd-placeholder-img {
@@ -99,9 +101,14 @@ body {
     background-size: cover;
 }
 
+#socials h5 {
+    font-family: 'Kaushan Script', cursive;
+}
+
 p {
     font-size: 1.5rem;
 }
+
 
 .storm-watch-icon {
     width: 43px;
