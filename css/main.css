@@ -26,6 +26,13 @@ body .background {
     width: 100%;
 }
 
+@supports (-webkit-touch-callout: none) {
+    body .background {
+        background: url('../img/dj1.jpg') center top no-repeat scroll;
+        background-size: auto 100vh;
+    }
+}
+
 @media (max-width: 600px) {
     body .background {
         background-attachment: scroll;
