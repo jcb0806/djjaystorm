@@ -26,6 +26,10 @@ body .background {
     width: 100%;
 }
 
+.bg-light {
+    background-color: #fff!important;
+}
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
