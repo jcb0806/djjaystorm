@@ -26,6 +26,12 @@ body .background {
     width: 100%;
 }
 
+@media (max-width: 600px) {
+    body .background {
+        background-attachment: scroll;
+    }
+}
+
 .bg-light {
     background-color: #fff!important;
 }
@@ -103,6 +109,12 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+@media (max-width: 600px) {
+    #socials {
+        background-attachment: scroll;
+    }
 }
 
 #socials h5 {
