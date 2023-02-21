@@ -48,13 +48,13 @@
                   <a class="nav-link" href="#about">About</a>
                 </li>
 				<li class="nav-item">
+                  <a class="nav-link" href="#socials">Social Media/Events</a>
+                </li>
+				<li class="nav-item">
                   <a class="nav-link" href="#weddings">Weddings</a>
                 </li>
 				<li class="nav-item">
                   <a class="nav-link" href="#services">Services/Rates</a>
-                </li>
-				<li class="nav-item">
-                  <a class="nav-link" href="#socials">Social Media/Events</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#mixtape">Storm Watch</a>
@@ -72,7 +72,7 @@
         <h2 class="pt-5">DJ and Host in Eastern, NC</h2>
         <p class="lead">Keeping You Free While the Dance Floor Is Busy</p>
         <p class="lead">
-          <a href="#contact" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Book now</a>
+          <a href="#contact" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Book Now!</a>
         </p>
         <!-- <div class="video-wrap py-2"> -->
           <!-- <video poster="img/video-thumbnail.png" controls> -->
@@ -172,7 +172,7 @@
       </div>
     </div>
   </section> 
-   <section id="Services">
+   <section id="services">
     <div class="container">
       <div class="row g-0">
         <div class="col-md-6 pb-5">
@@ -192,6 +192,9 @@
   </section>
   <section id="mixtape">
    <div class="row justify-content-center g-0">
+   	  <div class="col-12">
+        <h5>Storm <i class="fa fa-bolt"></i> Watch</h5>
+      </div>
       <div class="col-sm-12 col-sm-8 p-5 text-center">
         <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1388755654&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -207,9 +210,6 @@
   </section>
   <section id="contact">
     <div class="container py-4">
-	  <div class="col-12">
-        <h5>Storm <i class="fa fa-bolt"></i> Watch</h5>
-      </div>
       <div class="row justify-content-center">
         <form id="contact" action="https://formspree.io/f/xqkjjeop" method="POST" class="col-md-8 col-lg-6">
           <!-- Name input -->
@@ -228,15 +228,21 @@
           </div>
           <!-- Message input -->
           <div class="mb-3">
-            <label class="form-label" for="message">Message</label>
-            <textarea class="form-control" id="message" name="message" type="text" placeholder="Message"
+            <label class="form-label" for="message">Event Type</label>
+            <textarea class="form-control" id="message" name="message" type="text" placeholder="Event"
               style="height: 10rem;" data-sb-validations="required"></textarea>
-            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="message:required">Event Type is required.</div>
+          </div>
+		  <div class="mb-3">
+            <label class="form-label" for="message">Event Date/Time</label>
+            <textarea class="form-control" id="message" name="message" type="text" placeholder="DateTime"
+              style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="message:required">Event Date is required.</div>
           </div>
           <div class="mb-3">
             <label class="form-label" for="message"># of guest</label>
             <input type="number" class="form-control" name="guest" placeholder="# of Guests" required>
-            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="message:required"># of Guest is required.</div>
           </div>
           <!-- Form submissions success message -->
           <div class="d-none" id="submitSuccessMessage">
